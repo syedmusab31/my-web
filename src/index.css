@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Syne:wght@400..800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #a4fca7;
+  --color-bg: #f7f7f7;
+
+  --font-heading: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-inter: "Inter", sans-serif;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  --animate-marquee: marquee 20s linear infinite;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-slate-900);
+    font-family: var(--font-inter);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 800;
+  }
+}
