@@ -12,19 +12,22 @@ export default function Hero() {
                 *{
                     font-family: "Poppins", sans-serif;
                 }
+                html {
+                    scroll-behavior: smooth;
+                }
             `}
         </style>
         <section className='bg-black bg-[url("https://assets.prebuiltui.com/images/components/hero-section/hero-net-image.png")] bg-no-repeat bg-bottom bg-size-[100%_auto] px-4 pt-5 md:pb-32'>
-            <nav className="flex items-center justify-between px-2.5 md:pl-6 py-2 max-w-6xl rounded-full mx-auto w-full border border-white/20">
-                <h3 className='text-xl text-white tracking-tighter' >Studio Dheet</h3>
+        <div className="fixed top-4 left-0 right-0 px-4 w-full z-50">
+            <nav className="flex items-center justify-between px-2.5 md:pl-6 py-2 rounded-full max-w-6xl mx-auto w-full border border-white/20 bg-black/60 backdrop-blur-xl shadow-lg shadow-black/50">
+                <h3 className='text-xl text-white tracking-tighter' >Syed Musab</h3>
                 
 
-                <nav id="menu" className={`max-md:fixed max-md:top-0 max-md:left-0 max-md:overflow-hidden items-center justify-center max-md:h-screen ${isMenuOpen ? 'max-md:w-full bg-black/10 backdrop-blur-md z-50' : 'max-md:w-0'} transition-[width] flex-col md:flex-row flex gap-8 text-white text-sm font-normal`}>
-                    <a className="hover:text-white/80" href="#">Services</a>
-                    <a className="hover:text-white/80" href="#">About</a>
-                    <a className="hover:text-white/80" href="#">Process</a>
-                    <a className="hover:text-white/80" href="#">Portfolio</a>
-
+                <div id="menu" className={`max-md:fixed max-md:top-0 max-md:left-0 max-md:overflow-hidden items-center justify-center max-md:h-screen ${isMenuOpen ? 'max-md:w-full bg-black/95 backdrop-blur-2xl z-50' : 'max-md:w-0'} transition-[width] flex-col md:flex-row flex gap-8 text-white text-sm font-normal`}>
+                    <a className="hover:text-violet-400 transition-colors" href="#services" onClick={() => setIsMenuOpen(false)}>Services</a>
+                    <a className="hover:text-violet-400 transition-colors" href="#process" onClick={() => setIsMenuOpen(false)}>Process</a>
+                    <a className="hover:text-violet-400 transition-colors" href="#portfolio" onClick={() => setIsMenuOpen(false)}>Portfolio</a>
+                    <a className="hover:text-violet-400 transition-colors" href="#testimonials" onClick={() => setIsMenuOpen(false)}>Testimonials</a>
                     <a className="md:hidden flex bg-violet-600 text-slate-100 pr-8 pl-2 py-2 rounded-full text-base font-medium hover:bg-violet-700 transition items-center" href="#">
                         <div className='size-9 rounded-full text-violet-600 bg-white mr-4 flex items-center justify-center'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
@@ -37,7 +40,7 @@ export default function Hero() {
                             <path d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
-                </nav>
+                </div>
                 <div className="flex items-center">
                     <a className="hidden md:flex bg-violet-600 text-slate-100 pr-8 pl-2 py-2 rounded-full text-base font-medium hover:bg-violet-700 transition items-center" href="#">
                         <div className='size-9 rounded-full text-violet-600 bg-white mr-4 flex items-center justify-center'>
@@ -53,6 +56,7 @@ export default function Hero() {
                     </button>
                 </div>
             </nav>
+        </div>
 
             <div className="flex items-center gap-2 border border-white/15 rounded-full pl-2 pr-3 py-1 text-sm w-fit mt-32 mx-auto">
                 <span className="flex items-center gap-1 text-violet-200 text-xs sm:text-sm">

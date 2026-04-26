@@ -1,7 +1,6 @@
 import Hero from "./components/Hero";
 import Problem from "./components/Problem";
 import Services from "./components/Services";
-import Solution from "./components/Solution";
 import Process from "./components/Process";
 import Portfolio from "./components/Portfolio";
 import Testimonials from "./components/Testimonials";
@@ -14,7 +13,6 @@ function App() {
       <Hero />
       <Problem />
       <Services />
-      <Solution />
       <Process />
       <Portfolio />
       <Testimonials />
