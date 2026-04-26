@@ -26,7 +26,7 @@ const Problem = () => {
     ];
 
     return (
-        <section className="py-24 px-6 bg-black w-full mx-auto relative border-t border-white/10">
+        <section className="py-24 px-6 bg-black w-full mx-auto relative">
             {/* Decorative background glow similar to hero */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-2xl h-64 bg-violet-600/10 blur-[100px] pointer-events-none" />
 

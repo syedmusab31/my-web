@@ -30,7 +30,7 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-24 px-6 bg-black w-full mx-auto relative border-t border-white/10">
+    <section id="services" className="py-24 px-6 bg-black w-full mx-auto relative">
       {/* Decorative background glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-64 bg-violet-600/10 blur-[120px] pointer-events-none" />
 
