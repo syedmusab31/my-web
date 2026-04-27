@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
     return (
-        <footer className="px-6 py-12 md:py-16 w-full text-gray-400 bg-black border-t border-white/10 font-sans relative overflow-hidden">
+        <footer id="footer" className="px-6 py-12 md:py-16 w-full text-gray-400 bg-black border-t border-white/10 font-sans relative overflow-hidden">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between w-full gap-12 lg:gap-20 border-b border-white/10 pb-12 relative z-10">
                 {/* Column 01: Brand & Socials */}
                 <div className="md:max-w-xs flex flex-col">
@@ -51,7 +51,9 @@ export default function Footer() {
                         <div className="text-sm space-y-6 text-gray-400">
                             <p className="leading-relaxed">Skip the back-and-forth. Pick a time that works for you to discuss your project.</p>
                             <a 
-                                href="#" 
+                                href="https://calendly.com/syedmusab585/30min" 
+                                target="_blank"
+                                rel="noreferrer"
                                 className="inline-flex items-center gap-2 bg-violet-600 hover:bg-violet-700 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 shadow-[0_0_15px_rgba(139,92,246,0.3)] hover:shadow-[0_0_25px_rgba(139,92,246,0.5)]"
                             >
                                 Book on Calendly

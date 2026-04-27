@@ -105,7 +105,7 @@ export default function Testimonials() {
     return (
         <section id="testimonials" className="py-24 bg-black w-full relative border-t border-white/10 font-sans overflow-hidden">
             {/* Decorative background glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-[400px] bg-violet-600/5 blur-[120px] pointer-events-none rounded-full" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-2xl h-64 bg-violet-600/10 blur-[100px] pointer-events-none" />
             
             <div className="max-w-7xl mx-auto px-6 relative z-10 mb-16">
                 <div className="flex flex-col items-center text-center">

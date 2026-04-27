@@ -33,7 +33,7 @@ export default function FAQ() {
     return (
         <section id="faq" className="py-24 px-6 bg-black w-full relative border-t border-white/10 font-sans overflow-hidden">
             {/* Decorative background glow */}
-            <div className="absolute top-1/3 left-0 w-[500px] h-[500px] bg-violet-600/10 blur-[150px] pointer-events-none rounded-full" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-2xl h-64 bg-violet-600/10 blur-[100px] pointer-events-none" />
             
             <div className="max-w-3xl mx-auto relative z-10 flex flex-col items-center justify-center">
                 <div className="flex items-center gap-2 border border-white/15 rounded-full px-4 py-1.5 text-sm w-fit mb-6 mx-auto">
@@ -80,7 +80,7 @@ export default function FAQ() {
 
                 <div className="mt-16 text-center">
                     <p className="text-gray-400">
-                        Still have questions? <a href="#" className="text-violet-400 hover:text-violet-300 font-medium underline underline-offset-4 decoration-violet-400/50 hover:decoration-violet-300 transition-colors">Send us a message</a>
+                        Still have questions? <a href="https://calendly.com/syedmusab585/30min" target="_blank" rel="noreferrer" className="text-violet-400 hover:text-violet-300 font-medium underline underline-offset-4 decoration-violet-400/50 hover:decoration-violet-300 transition-colors">Let's talk</a>
                     </p>
                 </div>
             </div>

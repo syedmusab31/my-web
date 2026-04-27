@@ -35,7 +35,7 @@ export default function Pricing() {
     return (
         <section id="pricing" className="py-24 px-6 bg-black w-full relative border-t border-white/10 font-sans overflow-hidden">
             {/* Decorative background glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-violet-600/10 blur-[150px] pointer-events-none rounded-full" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-2xl h-64 bg-violet-600/10 blur-[100px] pointer-events-none" />
             
             <div className="max-w-5xl mx-auto relative z-10 flex flex-col items-center">
                 
@@ -80,9 +80,9 @@ export default function Pricing() {
                                 Includes: Professional Strategy, Mobile-Responsive Design, and 30 Days of Support.
                             </p>
                             
-                            <button className={`w-full px-6 py-4 rounded-full cursor-pointer font-medium text-sm transition-all duration-300 ${item.mostPopular ? 'bg-violet-600 hover:bg-violet-700 text-white shadow-[0_0_20px_rgba(139,92,246,0.3)] hover:shadow-[0_0_30px_rgba(139,92,246,0.5)]' : 'bg-white/10 hover:bg-white/20 border border-white/10 text-white'}`}>
+                            <a href="https://calendly.com/syedmusab585/30min" target="_blank" rel="noreferrer" className={`block text-center w-full px-6 py-4 rounded-full cursor-pointer font-medium text-sm transition-all duration-300 ${item.mostPopular ? 'bg-violet-600 hover:bg-violet-700 text-white shadow-[0_0_20px_rgba(139,92,246,0.3)] hover:shadow-[0_0_30px_rgba(139,92,246,0.5)]' : 'bg-white/10 hover:bg-white/20 border border-white/10 text-white'}`}>
                                 {item.action}
-                            </button>
+                            </a>
                             
                             <div className="w-full mt-10 space-y-5">
                                 {item.features.map((feature, fIndex) => (
@@ -112,7 +112,7 @@ export default function Pricing() {
                 {/* Follow-up CTA */}
                 <div className="mt-12 text-center">
                     <p className="text-gray-400">
-                        Not sure which one you need? <a href="#" className="text-violet-400 hover:text-violet-300 font-medium underline underline-offset-4 decoration-violet-400/50 hover:decoration-violet-300 transition-colors">Let’s talk.</a>
+                        Not sure which one you need? <a href="https://calendly.com/syedmusab585/30min" target="_blank" rel="noreferrer" className="text-violet-400 hover:text-violet-300 font-medium underline underline-offset-4 decoration-violet-400/50 hover:decoration-violet-300 transition-colors">Let’s talk.</a>
                     </p>
                 </div>
 

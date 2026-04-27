@@ -37,7 +37,7 @@ export default function Process() {
   return (
     <section id="process" className="py-24 px-6 bg-black w-full mx-auto relative border-t border-white/10 overflow-hidden font-sans lg:h-screen lg:min-h-[800px] flex flex-col justify-center">
       {/* Decorative background glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-64 bg-violet-600/5 blur-[120px] pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-2xl h-64 bg-violet-600/10 blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto relative z-10">
         
