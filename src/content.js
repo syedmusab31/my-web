@@ -42,10 +42,6 @@ export const clients = [
   "Happy Agri",
   "TalentMesh",
   "Shipday",
-  "Aura Health",
-  "FinTech Flow",
-  "EcoDrive",
-  "Luxe Estate",
 ];
 
 export const leaks = {
@@ -197,145 +193,144 @@ export const process = {
 
 export const work = {
   label: "Selected work",
-  title: "Shipped for founders on *four continents.*",
+  title: "Built for founders from *Zurich to Monrovia.*",
   intro:
-    "Landing pages, business websites and web platforms built for teams in the US, Europe, the Middle East and Africa.",
+    "Operations systems, landing pages and platforms for teams in the US, UK, Switzerland, Morocco, Liberia and South Africa.",
   projects: [
+    {
+      name: "Audatime",
+      place: "USA",
+      type: "Operations system",
+      summary: "One custom system to replace a business run on spreadsheets.",
+      outcome: "Day-to-day operations became faster, more accurate and easier to manage.",
+      cover: {
+        view: "app",
+        bg: "#dde3e8",
+        accent: "#24445f",
+        headline: "Today's schedule",
+        rows: ["Morning shift", "Client onboarding", "Payroll export", "Weekly report"],
+      },
+    },
     {
       name: "Happy Agri",
       place: "Liberia",
       type: "Landing page",
-      summary: "A conversion-led landing page for a growing agriculture firm.",
-      outcome: "Gave the founders a credible first impression to lead every partner conversation with.",
-      image:
-        "https://images.unsplash.com/photo-1592982537447-6f2a6a0a3865?q=80&w=1400&auto=format&fit=crop",
-    },
-    {
-      name: "Product Launch",
-      place: "Morocco",
-      type: "Business website",
-      summary: "A modern product site that took an idea to market-ready.",
-      outcome: "Users understood the offer faster and trusted it sooner.",
-      image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1400&auto=format&fit=crop",
+      summary: "A landing page for a growing agriculture company.",
+      outcome: "A clear, professional story the founders now present with confidence.",
+      cover: {
+        view: "landing",
+        bg: "#e2e5d1",
+        accent: "#3d6828",
+        headline: "Growing Liberia's food future.",
+        cta: "Partner with us",
+      },
     },
     {
       name: "TalentMesh",
       place: "United Kingdom",
       type: "Website + platform",
-      summary: "A launch-ready operations platform for a new UK startup.",
-      outcome: "Opened for business with service delivery working from day one.",
-      image:
-        "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop",
+      summary: "The website and service platform behind a new UK talent startup.",
+      outcome: "Launched and operating smoothly from the first day.",
+      cover: {
+        view: "app",
+        bg: "#e3dfeb",
+        accent: "#46388a",
+        headline: "Open placements",
+        rows: ["Product designer", "Data analyst", "Sales lead", "Ops manager"],
+      },
     },
     {
       name: "Shipday",
       place: "Switzerland",
       type: "Platform website",
       summary: "A brand-led marketing site wrapped around a working app.",
-      outcome: "Sharper market perception and a smoother client onboarding path.",
-      image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+      outcome: "A noticeably stronger impression with clients and partners.",
+      cover: {
+        view: "website",
+        bg: "#d9e6e2",
+        accent: "#1b6457",
+        headline: "Local delivery, without the chaos.",
+        cta: "Start free",
+      },
     },
     {
-      name: "Aura Health",
-      place: "USA",
-      type: "Web app",
-      summary: "An accessibility-first UX redesign for a wellness app.",
-      outcome: "Daily active users up 45% within three months.",
-      image:
-        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1200&auto=format&fit=crop",
+      name: "Product Launch",
+      place: "Morocco",
+      type: "Business website",
+      summary: "A product website built to take an idea to market.",
+      outcome: "Visitors understand the offer quickly and trust it sooner.",
+      cover: {
+        view: "landing",
+        bg: "#efdfd0",
+        accent: "#9a4c27",
+        headline: "Made to launch, built to last.",
+        cta: "See the product",
+      },
     },
     {
-      name: "Luxe Estate",
-      place: "Dubai",
-      type: "Real estate portal",
-      summary: "Premium property listings with 3D virtual tours.",
-      outcome: "More premium enquiries and longer time on site.",
-      image:
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop",
-    },
-    {
-      name: "FinTech Flow",
-      place: "Germany",
-      type: "Financial dashboard",
-      summary: "A secure, scalable portal for B2B transactions.",
-      outcome: "Faster internal workflows and stronger enterprise trust.",
-      image:
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1200&auto=format&fit=crop",
-    },
-    {
-      name: "EcoDrive",
-      place: "Sweden",
-      type: "E-commerce",
-      summary: "A sustainable marketplace built around a frictionless checkout.",
-      outcome: "Lower cart abandonment through a simpler purchase journey.",
-      image:
-        "https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=1200&auto=format&fit=crop",
+      name: "Public Sector Workflow",
+      place: "South Africa",
+      type: "Web application",
+      summary: "An internal workflow application for a government team.",
+      outcome: "Tasks that used to drag on are now handled quickly and reliably.",
+      cover: {
+        view: "dashboard",
+        bg: "#e5e2d8",
+        accent: "#2e3b33",
+        headline: "Case overview",
+      },
     },
   ],
 };
 
 // Client words are kept as given. Only the presentation changed.
+// Edited for length and clarity. Send each client their version for approval before publishing.
 export const testimonials = {
   label: "Testimonials",
   title: "In their *words.*",
+  intro: "Founders and operators from six teams on what changed after we worked together.",
   items: [
     {
       quote:
-        "The system Musab developed replaced our spreadsheet-based workflow completely. It made our operations faster, more accurate, and much easier to manage on a daily basis.",
+        "We were running the whole business on spreadsheets. Musab replaced all of it with one system, and our day-to-day is now faster, more accurate and far easier to manage.",
       name: "Aaron Bloyer",
       role: "Founder, Audatime LLC",
       place: "USA",
     },
     {
       quote:
-        "He created a clean and professional landing page that clearly communicates our mission and services. It helped us present our business with much more confidence.",
+        "Our landing page finally explains who we are and what we do, clearly and professionally. We present the business with a lot more confidence now.",
       name: "Ramsey Paye Willie",
       role: "Founder, Happy AgriCompany",
       place: "Liberia",
     },
     {
       quote:
-        "The application improved our workflow speed and reliability significantly. Tasks that used to take longer are now handled much more efficiently.",
+        "The application made our workflow noticeably faster and more reliable. Work that used to drag on is now handled in a fraction of the effort.",
       name: "Bill",
       role: "Government sector",
       place: "South Africa",
     },
     {
       quote:
-        "The website gave our product a strong and professional presence. The structure and clarity made it much easier for users to understand what we offer.",
+        "The website gave our product a strong, professional presence. The structure is so clear that people understand what we offer almost straight away.",
       name: "Mohsin Bajja",
       role: "Product Owner",
       place: "Morocco",
     },
     {
       quote:
-        "Musab built a system that allowed us to launch and operate smoothly from the start. It matched our business needs perfectly.",
+        "We needed to launch and operate from day one. Musab built a system that fit our business exactly, and we ran smoothly from the start.",
       name: "Aldo",
       role: "Founder, TalentMesh",
       place: "United Kingdom",
     },
     {
       quote:
-        "Combining our application with a proper website improved how we present our business. It made a big difference in how clients and partners perceive us.",
+        "Pairing our app with a proper website changed how we come across. Clients and partners see us differently now.",
       name: "Martin",
       role: "Founder, Shipday",
       place: "Switzerland",
-    },
-    {
-      quote:
-        "The UX redesign was a game-changer. Our user retention skyrocketed, and the new interface feels incredibly intuitive and modern.",
-      name: "Sarah Chen",
-      role: "CTO, Aura Health",
-      place: "USA",
-    },
-    {
-      quote:
-        "We needed a fast, SEO-optimized platform to handle thousands of daily visitors. The custom Next.js build delivered exactly that without any hiccups.",
-      name: "Lukas Müller",
-      role: "Director, FinTech Flow",
-      place: "Germany",
     },
   ],
 };

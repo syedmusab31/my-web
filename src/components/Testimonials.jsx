@@ -29,7 +29,7 @@ export default function Testimonials() {
           label={testimonials.label}
           title={testimonials.title}
           tone="ink"
-          intro="Founders and operators from eight teams on what changed after working together."
+          intro={testimonials.intro}
         />
 
         <div

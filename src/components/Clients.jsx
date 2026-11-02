@@ -9,7 +9,9 @@ function Asterisk() {
 }
 
 export default function Clients() {
-  const row = [...clients, ...clients];
+  // Repeat enough times to overfill wide screens; the track loops at -50%.
+  const half = [...clients, ...clients, ...clients];
+  const row = [...half, ...half];
   return (
     <section aria-label="Clients" className="border-y border-(--rule)">
       <div className="frame frame-ruled flex flex-col gap-4 py-6 md:flex-row md:items-center md:gap-10">

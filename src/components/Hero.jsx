@@ -114,8 +114,8 @@ export default function Hero() {
                 ))}
               </div>
               <p className="text-[14px] leading-snug text-muted">
-                Trusted by founders in <span className="text-ink">9 countries</span>
-                <br className="hidden sm:block" /> across four continents.
+                Trusted by founders in the <span className="text-ink">US, UK,</span>
+                <br className="hidden sm:block" /> <span className="text-ink">Europe and Africa.</span>
               </p>
             </div>
 
