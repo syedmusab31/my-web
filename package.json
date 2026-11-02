@@ -1,7 +1,20 @@
 {
-  "name": "react",
+  "name": "margin-studio-site",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Marketing site for Margin, an independent web studio building fast, conversion-led landing pages and business websites.",
+  "keywords": [
+    "web-studio",
+    "agency-website",
+    "landing-page",
+    "react",
+    "vite",
+    "tailwindcss",
+    "framer-motion",
+    "portfolio",
+    "conversion"
+  ],
+  "author": "Syed Musab <syedmusab585@gmail.com>",
   "type": "module",
   "scripts": {
     "dev": "vite",

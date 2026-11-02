@@ -1,31 +1,122 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Syne:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap");
 @import "tailwindcss";
 
+/*
+  Margin — design tokens
+  Paper, ink and one red pencil. Everything else is spacing and type.
+*/
 @theme {
-  --color-primary: #a4fca7;
-  --color-bg: #f7f7f7;
+  --color-paper: #f3f0e8;
+  --color-paper-2: #e9e5da;
+  --color-paper-3: #dcd7c9;
+  --color-ink: #151412;
+  --color-ink-2: #23221f;
+  --color-ink-3: #34322e;
+  --color-muted: #6c685f;
+  --color-faint: #9a958a;
+  --color-pencil: #e0452b;
+  --color-pencil-soft: #f6d5cb;
 
-  --font-heading: "Inter", sans-serif;
-  --font-body: "Inter", sans-serif;
-  --font-inter: "Inter", sans-serif;
+  --font-sans: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
+  --font-mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
 
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --animate-marquee: marquee 38s linear infinite;
   @keyframes marquee {
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
   }
-
-  --animate-marquee: marquee 20s linear infinite;
 }
 
 @layer base {
-  body {
-    background-color: var(--color-bg);
-    color: var(--color-slate-900);
-    font-family: var(--font-inter);
+  :root {
+    --rule: color-mix(in oklab, var(--color-ink) 12%, transparent);
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading);
-    font-weight: 800;
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: var(--color-pencil);
+    color: var(--color-paper);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-pencil);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  h1, h2, h3, h4 {
+    font-weight: 500;
+    letter-spacing: -0.035em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+}
+
+@layer components {
+  /* Dark sections flip the rule colour so the margin lines keep reading. */
+  .on-ink {
+    --rule: color-mix(in oklab, var(--color-paper) 12%, transparent);
+    background-color: var(--color-ink);
+    color: var(--color-paper);
+  }
+
+  /* The page frame: content width plus the two margin rules the studio is named after. */
+  .frame {
+    width: 100%;
+    max-width: 1240px;
+    margin-inline: auto;
+    padding-inline: 20px;
+  }
+  @media (min-width: 768px) {
+    .frame { padding-inline: 40px; }
+  }
+  @media (min-width: 1280px) {
+    .frame-ruled {
+      border-inline: 1px solid var(--rule);
+    }
+  }
+
+  .label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    line-height: 1;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .serif-accent {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  /* A subtle paper grain, drawn once, no image request. */
+  .grain {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   }
 }
